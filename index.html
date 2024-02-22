@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" theme="white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.2"></script>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="header-wrapper">
+        <a href="#main"> <img id="header-logo" src="triangle-logo 1.png" alt="logo"></a>
+       
+        <div class="header-menu">
+            <a href="#main" class="header-menu-link">Главная</a>
+            <a href="#about" class="header-menu-link">О авторе</a>
+            <a href="#" class="header-menu-link">О сайте</a>
+            <a href="#" class="header-menu-link">Специальные функции</a>
+        <div class="header-tema">
+            <button onclick="themeDark()" id="dark" class="header-tema-button">
+                темная тема
+            </button>
+        </div>
+        </div>
+    </div>
+</header>
+<main >
+    <section class="main" id="main">
+        <div class="main-wrapper">
+            <div class="main-text">
+                <h1>Это мой сайт</h1>
+                <p id="main-text-p">и его тема...</p>
+            </div>
+            <img class="main-img" src="image 1.png" alt="img">
+        </div>
+    </section>
+    <section class="second-block" id="about">
+        <h1>Это сайт о програмировании</h1>
+        <p>Кто пролистал-печенька в подарок</p>
+    </section>
+    <section id="youtube" class="youtube">
+        <div class="wrapper">
+            <div class="youtube-wrapper">
+                <h2 class="youtube-title">Если посмотришь-респект</h2>
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/DjGYHzzcvgU?si=eB4qtIXkXb6nCbRW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="tik-tok" class="tik-tok">
+        <div class="wrapper">
+            <div class="tiktok-wrapper">
+                <h2 class="tiktok-title">что смотрят легенды</h2>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@epic_fighting_official/video/7064187206474222849" data-video-id="7064187206474222849" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@epic_fighting_official" href="https://www.tiktok.com/@epic_fighting_official?refer=embed">@epic_fighting_official</a> <a title="иришка_чикипики" target="_blank" href="https://www.tiktok.com/tag/%D0%B8%D1%80%D0%B8%D1%88%D0%BA%D0%B0_%D1%87%D0%B8%D0%BA%D0%B8%D0%BF%D0%B8%D0%BA%D0%B8?refer=embed">#Иришка_ЧИКИПИКИ</a> <a title="рекомендации" target="_blank" href="https://www.tiktok.com/tag/%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8?refer=embed">#рекомендации</a> <a title="epic_fighting_official" target="_blank" href="https://www.tiktok.com/tag/epic_fighting_official?refer=embed">#epic_fighting_official</a> <a title="шоу" target="_blank" href="https://www.tiktok.com/tag/%D1%88%D0%BE%D1%83?refer=embed">#шоу</a> <a target="_blank" title="♬ оригинальный звук - Epic_fighting_official" href="https://www.tiktok.com/music/оригинальный-звук-7064187206499388161?refer=embed">♬ оригинальный звук - Epic_fighting_official</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+        </div>
+    </section>
+    <section id="event" class="event">
+        <div class="wrapper">
+            <div class="event-wrapper">
+                <h2 id="title" class="event-title">Секция событий:</h2>
+                <div class="event-buttons">
+                    <Button class="event-button">
+                        Кнопка 1
+                    </Button>
+                    <Button onclick="changeTitle ()" class="event-button">
+                        Кнопка 2
+                    </Button>
+                    <Button class="event-button">
+                        Кнопка 3
+                    </Button>
+                    <Button onclick="changeColor ()" class="event-button">
+                        Кнопка 4
+                    </Button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="event2" class="event2">
+        <div class="wrapper2">
+            <div class="event-wrapper2">
+                <div class="event-buttons">
+                    <Button class="event-button2">
+                        Кнопка 1
+                    </Button>
+                    <Button onclick="changeTitle ()" class="event-button2">
+                        Кнопка 2
+                    </Button>
+                    <Button class="event-button2">
+                        Кнопка 3
+                    </Button>
+                    <Button onclick="changeColor ()" class="event-button2">
+                        Кнопка 4
+                    </Button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+           
+          <div class="swiper-slide"> <img src="https://i.pinimg.com/564x/98/36/3f/98363feacbf22abe1e3a7b1cd3262e5a.jpg" alt="*"></div>
+          
+          <div class="swiper-slide"><img src="https://i.pinimg.com/564x/a4/02/8d/a4028da923b9b6f9594242035a5f4969.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://i.pinimg.com/564x/4c/39/d2/4c39d2a36aac99a6d9298c30a77209a0.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://i.pinimg.com/564x/d4/21/fb/d421fb0f557973053725938e242904cc.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://i.pinimg.com/564x/3b/53/50/3b53508c712e776ab361d1b58b4682c7.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://i.pinimg.com/564x/9e/d0/a1/9ed0a16fac9e8c5d231da5fdc2232593.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://i.pinimg.com/564x/60/8c/84/608c84b0ccdfb8b3f3d5f22924f41a5b.jpg" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="https://i.pinimg.com/564x/25/45/1e/25451e51f89d681ca1d40d9c703e9578.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://i.pinimg.com/564x/0b/c9/bc/0bc9bcbd094db30e558e76c81c4a2d73.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div id="app">
+        <section class="section-crit">
+            <div class="wrapper">
+                <form action="*" class="section-crit-wrapper">
+                    <div>
+                        <input class="section-crit-input" id="title-crit" type="text" v-model="title">
+                        <button class="section-crit-button" id="add-title" onclick="GetTitle()">Заголовок</button>
+                    </div>
+                    <div>
+                        <input class="section-crit-input" id="img-crit" type="text" v-model="image">
+                        <button onclick="changeImg()" class="section-crit-button" id="add-img">добавить картинку</button>
+                    </div>
+                    <div>
+                        <textarea id="text-crit" class="section-crit-input" placeholder="Добавьте текст" v-model="text">  </textarea>
+                        <button id="add-text" class="section-crit-button">Добавьте текст</button>
+                    </div>
+                </form>
+            </div>
+          </section>
+          <section class="projekt">
+            <div class="wrapper">
+                <div class="projekt-wrapper">
+                    <div class="projekt-left">
+                        <h2 class="projekt-title" id="projekt-title">{{title}}</h2>
+                    <p id="projekt-text">{{text}}</p>
+                    </div>
+                    <img :src="image" class="projekt-img" id="projekt-img" >
+                </div>
+            </div>
+          </section>
+    </div>
+</main>
+ <footer>
+    <p >&copy; 2024 Годные Мемы. Все права защищены.</p>
+			<p>
+				<a href="https://www.youtube.com/@zeljevarka/featured">youtube</a>
+				<a href="https://www.tiktok.com/@zeljevarka">tiktok</a>
+				<a href="https://www.instagram.com/zeljevarka/">instagram</a>
+			</p>
+ </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
